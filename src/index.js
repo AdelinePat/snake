@@ -63,12 +63,12 @@ function gameOver() {
 }
 
 function drawMap() {
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "#020604";
   ctx.fillRect(0, 0, WIDTH, HEIGHT);
 }
 
 function drawSnake() {
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "#2b9348";
   for (let body of snake) {
     ctx.fillRect(body[0] * gridElem, body[1] * gridElem, gridElem, gridElem);
   }
@@ -76,7 +76,7 @@ function drawSnake() {
 
 function drawApple() {
   if (!assetsReady) {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#f54d4e";
     ctx.fillRect(apple[0] * gridElem, apple[1] * gridElem, gridElem, gridElem);
   }
 
